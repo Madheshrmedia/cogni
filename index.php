@@ -7,15 +7,15 @@ include_once "./header.php";
     .swiper {
         width: 100%;
         height: 100%;
-        background: #000;
+        /* background: #000; */
     }
 
     .swiper-slide {
         font-size: 18px;
-        color: #fff;
+        /* color: #fff;
         -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 40px 60px;
+        box-sizing: border-box; */
+        /* padding: 40px 60px; */
     }
 
     .parallax-bg {
@@ -43,11 +43,35 @@ include_once "./header.php";
         max-width: 400px;
         line-height: 1.3;
     }
+
+    .about-top-img {
+        width: 50px;
+    }
+
+    .about-head-img {
+        width: 30px;
+        padding-bottom: 20px;
+    }
+
+    .heading-site {
+        font-size: 36px;
+        font-weight: 400;
+        color: #271605;
+        line-height: 70px;
+    }
+
+    .about_overview {
+        margin-top: 55px;
+    }
 </style>
 <!-- Swiper -->
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./image/ban-1.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide">
+            <a href="#">
+                <img src="./image/ban-1.png" class="img-fluid" alt="">
+            </a>
+        </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
         <div class="swiper-slide">Slide 4</div>
@@ -60,6 +84,36 @@ include_once "./header.php";
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
+
+<!-- about overview -->
+<!-- <div class="about_overview ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./image/about-over.png" class="img-fluid about-top-img" alt="">
+                        <!-- heading -->
+<div class="abt-cont py-5">
+    <h3 class="heading-site">
+        Welcome to Cogni <br>
+        Wellness Hub <span><img src="./image/about-head.png" class="about-head-img" alt=""></span>
+    </h3>
+    <p class="about-overview-content">
+        Experience the ultimate in wellness and beauty with our comprehensive range of services
+        designed to
+        rejuvenate and enhance your well-being.
+    </p>
+</div>
+</div>
+<div class="col-md-6">
+    <img src="./image/about-overview.png" class="img-fluid" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
 
 <?php
 include_once "./footer.php";
