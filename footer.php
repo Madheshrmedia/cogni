@@ -24,6 +24,7 @@
 
         .footer-heading {
             color: white;
+            line-height: 25px;
         }
 
         .footer-contenty {
