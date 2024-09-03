@@ -146,6 +146,11 @@
     var swiper = new Swiper(".mySwiper", {
         speed: 600,
         parallax: true,
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 4000, // 6 seconds interval
+            disableOnInteraction: false, // Keeps autoplay active after user interaction
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -153,6 +158,34 @@
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper = new Swiper(".aesthetic_slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 3000, // 6 seconds interval
+            disableOnInteraction: false, // Keeps autoplay active after user interaction
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    var swiper = new Swiper(".af_p_slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 3000, // 6 seconds interval
+            disableOnInteraction: false, // Keeps autoplay active after user interaction
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
     });
 </script>

@@ -25,7 +25,7 @@
     <style>
         * {
             font-family: "Poppins", sans-serif;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
         }
 
         #headerall {
