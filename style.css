@@ -1,0 +1,36 @@
+@font-face{
+    font-family: bold;
+    src:url(./font/Poppins/Poppins-Bold.ttf);
+
+}
+@font-face{
+    font-family: regular;
+    src:url(./font/Poppins/Poppins-Regular.ttf);
+}
+body{
+    font-family: regular;
+}
+h2{
+    margin-bottom: 1.5rem !important;
+}
+p{
+    color:#757575;
+}
+.hero {
+	background-color: #000000;
+     background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	padding:10em;
+	text-align: center;
+   
+}
+.popregular{
+    font-family: regular; 
+    font-size: 20px !important;
+}
+.black{
+    color:#000000;
+    font-weight: 600;
+}
+
