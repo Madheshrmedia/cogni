@@ -113,7 +113,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./salon-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -148,7 +148,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./spa-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -190,7 +190,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./slimming-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -225,7 +225,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./aesthetic-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -265,7 +265,7 @@ include_once "./header.php";
 
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./laser-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
