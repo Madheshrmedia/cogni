@@ -141,16 +141,16 @@
                             <a class="nav-link" href="./index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="./about.php">About us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./service.php">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="./contact.php">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="./blog.php">Blog</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">

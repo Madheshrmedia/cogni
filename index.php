@@ -485,30 +485,8 @@ include_once "./header.php";
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="./image/aesth-1.png" class="card-img-top" alt="...">
-                                <div class="card-body aesthetic_slider-card-body" style="display: block;">
-                                    <h5 class="aesthetic_slider-title">ANTI AGEING</h5>
-                                    <p class="aesthetic_slider-text">Advanced treatments to rejuvenate and restore
-                                        youthful skin
-                                    </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="./image/aesth-1.png" class="card-img-top" alt="...">
-                                <div class="card-body aesthetic_slider-card-body" style="display: block;">
-                                    <h5 class="aesthetic_slider-title">ANTI AGEING</h5>
-                                    <p class="aesthetic_slider-text">Advanced treatments to rejuvenate and restore
-                                        youthful skin
-                                    </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
+
+
                     </div>
 
                 </div>

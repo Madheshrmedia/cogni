@@ -113,7 +113,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./service-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
