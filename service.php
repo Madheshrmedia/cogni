@@ -83,7 +83,7 @@ include_once "./header.php";
                         <img src="./image/ser-1.png" class="img-fluid w-100" alt="">
                     </div>
 
-                    <div class="col-md-6 mt-3">
+                    <div class="col-md-6 mt-3" id="SALON SERVICES">
                         <p class="service_heading">
                             SALON SERVICES
                         </p>
@@ -118,7 +118,7 @@ include_once "./header.php";
                         </a>
                     </div>
                     <!-- 2nd service -->
-                    <div class="col-md-6  mt-5">
+                    <div class="col-md-6  mt-5" id="SPA SERVICES">
                         <p class="service_heading">
                             SPA SERVICES
                         </p>
@@ -160,7 +160,7 @@ include_once "./header.php";
                         <img src="./image/ser-3.png" class="img-fluid w-100" alt="">
                     </div>
 
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5" id="SLIMMING SERVICES">
                         <p class="service_heading">
                             SLIMMING SERVICES
                         </p>
@@ -195,7 +195,7 @@ include_once "./header.php";
                         </a>
                     </div>
                     <!-- 4th service -->
-                    <div class="col-md-6  mt-5">
+                    <div class="col-md-6  mt-5" id="AESTHETIC SERVICES">
                         <p class="service_heading">
                             AESTHETIC SERVICES
                         </p>
@@ -237,7 +237,7 @@ include_once "./header.php";
                         <img src="./image/ser-5.png" class="img-fluid w-100" alt="">
                     </div>
 
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5" id="LASER">
                         <p class="service_heading">
                             LASER
 
