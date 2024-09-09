@@ -1,6 +1,7 @@
 <?php
 include_once "./header.php";
 ?>
+
 <!-- hader banner slider -->
 <!-- Swiper -->
 <style>
@@ -216,28 +217,28 @@ include_once "./header.php";
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./image/ban-2.png" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./image/ban-1.png" class="img-fluid" alt="">
             </a>
         </div>
 
         <div class="swiper-slide">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./image/ban-3.png" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./image/ban-4.png" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./image/ban-5.png" class="img-fluid" alt="">
             </a>
         </div>
@@ -295,7 +296,7 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Salon</h3>
                                     <p class="card-text">Expert hair and beauty treatments tailored to you</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-1.png" alt="Card image cap">
                             </div>
@@ -307,7 +308,7 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Our Kids Spa</h3>
                                     <p class="card-text">Fun Filled Rejuvenating Kids Spa for Little Ones' Pampering</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-2.png" alt="Card image cap">
                             </div>
@@ -319,7 +320,7 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Slimming Services</h3>
                                     <p class="card-text">Personalized programs to help you achieve your ideal body</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-3.png" alt="Card image cap">
                             </div>
@@ -331,7 +332,7 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Laser Treatments</h3>
                                     <p class="card-text">State-of-the-art laser treatments for various skin concerns</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-4.png" alt="Card image cap">
                             </div>
@@ -343,7 +344,7 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Aesthetic services</h3>
                                     <p class="card-text">Enhancing beauty through advanced aesthetic treatments</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-5.png" alt="Card image cap">
                             </div>
@@ -355,14 +356,14 @@ include_once "./header.php";
                                 <div class="content">
                                     <h3 class="card-title">Ayurvedic Family Spa</h3>
                                     <p class="card-text">Luxurious Ayurvedic Day Spa for Holistic Wellness</p>
-                                    <a href="#" class="our-ser-button">Read More</a>
+                                    <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-6.png" alt="Card image cap">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mx-auto py-5 text-center">
-                        <a href="#" class="our-ser-link">
+                        <a href="./service.php" class="our-ser-link">
                             Read More &#8594;
                         </a>
                     </div>
@@ -410,7 +411,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Advanced treatments to rejuvenate and restore
                                         youthful skin.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -421,7 +423,8 @@ include_once "./header.php";
                                     <h5 class="aesthetic_slider-title">ORGANIC PEELS</h5>
                                     <p class="aesthetic_slider-text">Reveal youthful skin by removing dead skin.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +436,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Non-invasive, beneficial for women experiencing
                                         laxity due to aging.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +449,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Transform your look with our premium hair extension
                                         services.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +462,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Tightens and lift skin with focused ultrasound
                                         technology.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -469,7 +475,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Regain Your Confidence with Our Expert Hair
                                         Transplant.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -481,7 +488,8 @@ include_once "./header.php";
                                     <p class="aesthetic_slider-text">Ultimate in skin rejuvenation with our advanced
                                         OxyGeneo Pollogen.
                                     </p>
-                                    <a href="#" class="aesthetic_slider-link">Book Now &#8594;</a>
+                                    <a href="#" class="aesthetic_slider-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Book Now &#8594;</a>
                                 </div>
                             </div>
                         </div>
@@ -501,17 +509,17 @@ include_once "./header.php";
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./image/ofr_slider-1.png" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./image/ofr_slider-2.png" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./image/ofr_slider-3.png" class="img-fluid" alt="">
                 </a>
             </div>

@@ -113,7 +113,11 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
+<<<<<<< HEAD
                         <a href="./service-detail.php" class="service_link">
+=======
+                        <a href="./salon-detail.php" class="service_link">
+>>>>>>> eec324ee7ab5b396ec8819b5bd3797cc1056488a
                             VIEW ALL
                         </a>
                     </div>
@@ -148,7 +152,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./spa-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -190,7 +194,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./slimming-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -225,7 +229,7 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./aesthetic-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>
@@ -265,7 +269,7 @@ include_once "./header.php";
 
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-                        <a href="#" class="service_link">
+                        <a href="./laser-detail.php" class="service_link">
                             VIEW ALL
                         </a>
                     </div>

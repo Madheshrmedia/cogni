@@ -89,6 +89,9 @@
         }
     </style>
 </head>
+<?php
+include_once("./popup.php");
+?>
 
 <body>
     <header class="header header-sticky" id="headerall">
@@ -158,9 +161,11 @@
                             <i class="fas fa-phone-alt my-auto"></i>
                             <p>+91 90031 32242</p>
                         </a>
-                        <a href="#" class="booknow-btn">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="booknow-btn">
                             Book Appointment
                         </a>
+
+
                     </div>
                 </div>
             </div>

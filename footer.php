@@ -55,23 +55,27 @@
                         Our Services
                     </h6>
                     <p class="footer-contenty">
-                        <a href="#!" class="text-reset"><i class="fas fa-chevron-right me-2"></i>SALON SERVICES
+                        <a href="./service.php#SALON SERVICES" class="text-reset"><i
+                                class="fas fa-chevron-right me-2"></i>SALON SERVICES
                         </a>
                     </p>
                     <p class="footer-contenty">
-                        <a href="#!" class="text-reset"><i class="fas fa-chevron-right me-2"></i>SPA SERVICES
+                        <a href="./service.php#SPA SERVICES" class="text-reset"><i
+                                class="fas fa-chevron-right me-2"></i>SPA SERVICES
                         </a>
                     </p>
                     <p class="footer-contenty">
-                        <a href="#!" class="text-reset"><i class="fas fa-chevron-right me-2"></i>SLIMMING SERVICES
+                        <a href="./service.php#SLIMMING SERVICES" class="text-reset"><i
+                                class="fas fa-chevron-right me-2"></i>SLIMMING SERVICES
                         </a>
                     </p>
                     <p class="footer-contenty">
-                        <a href="#!" class="text-reset"><i class="fas fa-chevron-right me-2"></i>AESTHETIC SERVICES
+                        <a href="./service.php#AESTHETIC SERVICES" class="text-reset"><i
+                                class="fas fa-chevron-right me-2"></i>AESTHETIC SERVICES
                         </a>
                     </p>
                     <p class="footer-contenty">
-                        <a href="#!" class="text-reset"><i class="fas fa-chevron-right me-2"></i>LASER
+                        <a href="./service.php#LASER" class="text-reset"><i class="fas fa-chevron-right me-2"></i>LASER
                         </a>
                     </p>
                 </div>
