@@ -44,7 +44,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <img src="./image/footer-logoimg.png" style="width:250px;" class="img-fluid" alt="">
+                    <img src="./image/footer-logoimg.webp" style="width:250px;" class="img-fluid" alt="">
                 </div>
                 <!-- Grid column -->
 
@@ -87,20 +87,33 @@
                     <h6 class="text-uppercase fw-bold mb-4 footer-heading">
                         Follow us
                     </h6>
-                    <div class="footer-follow d-flex">
-                        <a href="#" class="follow-up-link me-2">
-                            <img src="./image/ft-fb.png" class="img-fluid" alt="">
+                    <div class="footer-follow d-flex" id="footersocial">
+                        <a href="https://www.facebook.com/profile.php?id=61563851213696" target="_blank"
+                            class="follow-up-link me-2">
+                            <img src="./image/ft-fb.webp" class="img-fluid" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/cogniwellness_tharamani?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" class="follow-up-link me-2">
+                            <img src="./image/ft-ig.webp" class="img-fluid" alt="">
                         </a>
                         <a href="#" class="follow-up-link me-2">
-                            <img src="./image/ft-ig.png" class="img-fluid" alt="">
+                            <img src="./image/ft-x.webp" class="img-fluid" alt="">
                         </a>
-                        <a href="#" class="follow-up-link me-2">
-                            <img src="./image/ft-x.png" class="img-fluid" alt="">
-                        </a>
+
                     </div>
+                    <style>
+                        @media screen and (max-width:500px) {
+                            #footersocial {
+                                justify-content: center;
+                            }
+                        }
+                    </style>
                     <div class="footer-follow">
                         <a href="#" class="follow-up-link">
-                            <img src="./image/ft-li.png" class="img-fluid mt-2" alt="">
+                            <img src="./image/ft-li.webp" class="img-fluid mt-2" alt="">
+                        </a>
+                        <a href="#" class="follow-up-link ">
+                            <img src="./image/ft-yt.webp" class="img-fluid mt-2" alt="">
                         </a>
                     </div>
                 </div>
@@ -111,7 +124,7 @@
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4 footer-heading">Contact</h6>
 
-                    <p class="footer-content"><i class="fas fa-phone-alt me-3"></i>+91 90031 32242</p>
+                    <p class="footer-content"><i class="fas fa-phone-alt me-3"></i>+91 8056121346/9003132242</p>
                     <p class="footer-content">
                         <i class="fas fa-envelope me-3"></i>
                         cogniwellnesshub@gmail.com
@@ -163,6 +176,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+
     });
 
     var swiper = new Swiper(".aesthetic_slider", {
@@ -177,6 +191,20 @@
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            // When the viewport is 768px or larger
+            768: {
+                slidesPerView: 3, // Show 3 slides per view
+            },
+            // When the viewport is 576px or larger
+            576: {
+                slidesPerView: 2, // Show 2 slides per view
+            },
+            // When the viewport is less than 576px (mobile devices)
+            0: {
+                slidesPerView: 1, // Show 1 slide per view on mobile
+            }
+        }
     });
 
     var swiper = new Swiper(".af_p_slider", {
@@ -191,6 +219,20 @@
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            // When the viewport is 768px or larger
+            768: {
+                slidesPerView: 3, // Show 3 slides per view
+            },
+            // When the viewport is 576px or larger
+            576: {
+                slidesPerView: 2, // Show 2 slides per view
+            },
+            // When the viewport is less than 576px (mobile devices)
+            0: {
+                slidesPerView: 1, // Show 1 slide per view on mobile
+            }
+        }
     });
 </script>
 

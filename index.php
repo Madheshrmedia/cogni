@@ -2,6 +2,37 @@
 include_once "./header.php";
 ?>
 
+<?php
+include_once("./header.php");
+
+// Your API endpoint
+$api_url = "https://admin-backend.cogniwellness.com/list-blog";
+
+// Initialize cURL
+$ch = curl_init();
+
+$img_url = "https://admin-backend.cogniwellness.com/upload/";
+
+// Set cURL options
+curl_setopt($ch, CURLOPT_URL, $api_url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Only if your API uses HTTPS and you encounter SSL issues
+
+// Execute cURL and fetch the data
+$response = curl_exec($ch);
+
+// Close cURL
+curl_close($ch);
+
+// Decode JSON response to PHP array
+$blogs = json_decode($response, true);
+
+// Check if the data is in the expected format
+$blogs = isset($blogs['listblog']) ? $blogs['listblog'] : [];
+
+
+?>
+
 <!-- hader banner slider -->
 <!-- Swiper -->
 <style>
@@ -178,7 +209,7 @@ include_once "./header.php";
 
     .affordable_price {
         overflow-x: hidden;
-        background-image: url('./image/aff-price.png');
+        background-image: url('./image/aff-price.webp');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -212,34 +243,108 @@ include_once "./header.php";
         font-size: 20px;
         color: #342D30;
     }
+
+    .job-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .coursecontainer {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .h4heading {
+        text-transform: uppercase;
+        color: #008AFF;
+        font-size: 24px;
+    }
+
+    .h3heading {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .blogcontainer .card {
+        border: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .blogcontainer .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .blogcontainer .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .blogcontainer .card-body {
+        padding: 20px;
+    }
+
+    .blogcontainer .aesthetic_slider-text {
+        color: #FF6F61;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .blog-title {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .blog-content {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 15px;
+    }
+
+    .blogcontainer .aesthetic_slider-link {
+        color: #008AFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .blogcontainer .aesthetic_slider-link:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width:500px) {
+        .aesthetic_ser-leftcard {
+            margin-top: 6px;
+        }
+    }
 </style>
 <!-- Swiper -->
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="./image/ban-2.png" class="img-fluid" alt="">
+                <img src="./image/ban-2.webp" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="./image/ban-1.png" class="img-fluid" alt="">
+                <img src="./image/ban-1.webp" class="img-fluid" alt="">
             </a>
         </div>
 
         <div class="swiper-slide">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="./image/ban-3.png" class="img-fluid" alt="">
+                <img src="./image/ban-3.webp" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="./image/ban-4.png" class="img-fluid" alt="">
+                <img src="./image/ban-4.webp" class="img-fluid" alt="">
             </a>
         </div>
         <div class="swiper-slide">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="./image/ban-5.png" class="img-fluid" alt="">
+                <img src="./image/ban-5.webp" class="img-fluid" alt="">
             </a>
         </div>
     </div>
@@ -252,12 +357,12 @@ include_once "./header.php";
             <div class="col-md-10 mx-auto">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="./image/about-over.png" class="img-fluid about-top-img" alt="">
+                        <img src="./image/about-over.webp" class="img-fluid about-top-img" alt="">
 
                         <div class="abt-cont py-5">
                             <h3 class="heading-site">
                                 Welcome to Cogni <br>
-                                Wellness Hub <span><img src="./image/about-head.png" class="about-head-img"
+                                Wellness Hub <span><img src="./image/about-head.webp" class="about-head-img"
                                         alt=""></span>
                             </h3>
                             <p class="about-overview-content">
@@ -268,7 +373,7 @@ include_once "./header.php";
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="./image/about-overview.png" class="img-fluid" alt="">
+                        <img src="./image/about-overview.webp" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -278,7 +383,7 @@ include_once "./header.php";
 
 <!-- our service -->
 
-<img src="./image/orser-topimg.png" class="out-service-topimg" alt="">
+<img src="./image/orser-topimg.webp" class="out-service-topimg" alt="">
 
 <div class="ourservice">
     <div class="container">
@@ -298,7 +403,7 @@ include_once "./header.php";
                                     <p class="card-text">Expert hair and beauty treatments tailored to you</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-1.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-1.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -310,7 +415,7 @@ include_once "./header.php";
                                     <p class="card-text">Fun Filled Rejuvenating Kids Spa for Little Ones' Pampering</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-2.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-2.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -322,7 +427,7 @@ include_once "./header.php";
                                     <p class="card-text">Personalized programs to help you achieve your ideal body</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-3.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-3.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -334,7 +439,7 @@ include_once "./header.php";
                                     <p class="card-text">State-of-the-art laser treatments for various skin concerns</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-4.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-4.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -346,7 +451,7 @@ include_once "./header.php";
                                     <p class="card-text">Enhancing beauty through advanced aesthetic treatments</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-5.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-5.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -358,7 +463,7 @@ include_once "./header.php";
                                     <p class="card-text">Luxurious Ayurvedic Day Spa for Holistic Wellness</p>
                                     <a href="./service.php" class="our-ser-button">Read More</a>
                                 </div>
-                                <img class="card-img" src="./image/ourser-6.png" alt="Card image cap">
+                                <img class="card-img" src="./image/ourser-6.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
@@ -377,7 +482,7 @@ include_once "./header.php";
 
 <!-- after our service banner -->
 <div class="container">
-    <img src="./image/af-orser.png" class="img-fluid" alt="">
+    <img src="./image/af-orser.webp" class="img-fluid" alt="">
 </div>
 
 <!-- AESTHETIC SERVICES -->
@@ -405,7 +510,7 @@ include_once "./header.php";
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-1.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-1.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">ANTI AGEING</h5>
                                     <p class="aesthetic_slider-text">Advanced treatments to rejuvenate and restore
@@ -418,7 +523,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-2.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-2.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">ORGANIC PEELS</h5>
                                     <p class="aesthetic_slider-text">Reveal youthful skin by removing dead skin.
@@ -430,7 +535,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-3.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-3.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">VAGINAL TIGHTENING</h5>
                                     <p class="aesthetic_slider-text">Non-invasive, beneficial for women experiencing
@@ -443,7 +548,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-4.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-4.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">HAIR EXTENSION</h5>
                                     <p class="aesthetic_slider-text">Transform your look with our premium hair extension
@@ -456,7 +561,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-5.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-5.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">HIFU TREATMENT</h5>
                                     <p class="aesthetic_slider-text">Tightens and lift skin with focused ultrasound
@@ -469,7 +574,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-6.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-6.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">HAIR TRANSPLANT</h5>
                                     <p class="aesthetic_slider-text">Regain Your Confidence with Our Expert Hair
@@ -482,7 +587,7 @@ include_once "./header.php";
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="./image/aesth-7.png" class="card-img-top" alt="...">
+                                <img src="./image/aesth-7.webp" class="card-img-top" alt="...">
                                 <div class="card-body aesthetic_slider-card-body" style="display: block;">
                                     <h5 class="aesthetic_slider-title">OXYGENEO-POLLOGEN TREATMENT</h5>
                                     <p class="aesthetic_slider-text">Ultimate in skin rejuvenation with our advanced
@@ -510,17 +615,17 @@ include_once "./header.php";
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="./image/ofr_slider-1.png" class="img-fluid" alt="">
+                    <img src="./image/ofr_slider-1.webp" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="./image/ofr_slider-2.png" class="img-fluid" alt="">
+                    <img src="./image/ofr_slider-2.webp" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="./image/ofr_slider-3.png" class="img-fluid" alt="">
+                    <img src="./image/ofr_slider-3.webp" class="img-fluid" alt="">
                 </a>
             </div>
 
@@ -541,7 +646,7 @@ include_once "./header.php";
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p1.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p1.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Salon Services</h5>
                                 <!-- <hr class="border-ln"> -->
@@ -553,7 +658,7 @@ include_once "./header.php";
 
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p2.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p2.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Spa Services</h5>
                                 <p class="af_p-text">Ayurvedic massages @ 50% OFF
@@ -563,7 +668,7 @@ include_once "./header.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p3.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p3.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Kids Spa</h5>
                                 <p class="af_p-text">Pamper your child with a Kids Spa and Enjoy a Free Haircut
@@ -573,7 +678,7 @@ include_once "./header.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p4.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p4.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Slimming Services</h5>
                                 <p class="af_p-text">Trial Offer - Lose upto 5kgs @ 3999
@@ -583,7 +688,7 @@ include_once "./header.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p5.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p5.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Laser Treatments</h5>
                                 <p class="af_p-text">Bonanza offer - Upper lip / chin Laser @ 699 /s
@@ -593,7 +698,7 @@ include_once "./header.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="./image/af-p6.png" class="card-img-top" alt="...">
+                            <img src="./image/af-p6.webp" class="card-img-top" alt="...">
                             <div class="card-body af_p-card-body" style="display: block;">
                                 <h5 class="af_p-title">Aesthetic services</h5>
                                 <p class="af_p-text">Hydra Facial @ 2999 only
@@ -624,6 +729,8 @@ include_once "./header.php";
 </div>
 
 <!-- blog -->
+
+
 <div class="blog my-5">
 
     <h3 class="testimonial-head text-center">
@@ -632,59 +739,38 @@ include_once "./header.php";
     <p class="testimonial-subhead text-center">
         Latest from Our Blog
     </p>
+    <?php if (!empty($blogs)): ?>
+        <div class="container">
+            <div class="row">
+                <?php
+                $count = 0;
+                foreach ($blogs as $blog):
+                    if ($count >= 3)
+                        break;
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./image/bg.png" class="img-fluid" alt="...">
-                    <div class="card-body aesthetic_slider-card-body" style="display: block;">
-                        <p class="aesthetic_slider-text">Wellness Tips
-                        </p>
-                        <h5 class="aesthetic_slider-title">Top 10 Tips for a Healthier Lifestyle</h5>
+                    ?>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="<?php echo $img_url . $blog['thumbnail_image']; ?>" class="img-fluid" alt="...">
+                            <div class="card-body aesthetic_slider-card-body" style="display: block;">
+                                <!--<p class="aesthetic_slider-text">Wellness Tips-->
+                                <!--</p>-->
+                                <h5 class="blog-title"><?php echo !empty($blog['title']) ? $blog['title'] : 'No Title'; ?></h5>
 
-                        <p class="blog-content">
-                            Discover simple yet effective tips to improve your overall health and well-being. From
-                            balanced diets to regul...
-                        </p>
-                        <a href="#" class="aesthetic_slider-link">Read More &#8594;</a>
+                                <p class="blog-content">
+                                    <?php echo !empty($blog['short_description']) ? $blog['short_description'] : 'No Description'; ?>
+                                </p>
+                                <a href="./blog-detail.php?id=<?php echo $blog['_id']; ?>" class="aesthetic_slider-link">Read
+                                    More &#8594;</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./image/bg.png" class="img-fluid" alt="...">
-                    <div class="card-body aesthetic_slider-card-body" style="display: block;">
-                        <p class="aesthetic_slider-text">Wellness Tips
-                        </p>
-                        <h5 class="aesthetic_slider-title">Top 10 Tips for a Healthier Lifestyle</h5>
-
-                        <p class="blog-content">
-                            Discover simple yet effective tips to improve your overall health and well-being. From
-                            balanced diets to regul...
-                        </p>
-                        <a href="#" class="aesthetic_slider-link">Read More &#8594;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./image/bg.png" class="img-fluid" alt="...">
-                    <div class="card-body aesthetic_slider-card-body" style="display: block;">
-                        <p class="aesthetic_slider-text">Wellness Tips
-                        </p>
-                        <h5 class="aesthetic_slider-title">Top 10 Tips for a Healthier Lifestyle</h5>
-
-                        <p class="blog-content">
-                            Discover simple yet effective tips to improve your overall health and well-being. From
-                            balanced diets to regul...
-                        </p>
-                        <a href="#" class="aesthetic_slider-link">Read More &#8594;</a>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
-    </div>
+    <?php else: ?>
+        <p>No blog posts found.</p>
+    <?php endif; ?>
 </div>
 
 

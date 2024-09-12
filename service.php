@@ -59,9 +59,56 @@ include_once "./header.php";
         position: relative;
         margin-left: -98px;
     }
+
+    .desk-img {
+        display: block;
+    }
+
+    .mob-img {
+        display: none;
+    }
+
+    @media screen and (max-width:500px) {
+        .#serbanner {
+            height: 160px
+        }
+
+        /* .mt-3,
+        .mt-5 {
+            padding-left: 2rem;
+        } */
+
+        .right-img {
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #footservimg {
+            padding-left: 0rem;
+        }
+
+        .banner-img {
+            height: 200px;
+        }
+
+        .desk-img {
+            display: none;
+        }
+
+        .mob-img {
+            display: block;
+        }
+
+        .service-card {
+            margin-left: 20px;
+            padding-bottom: 18px;
+        }
+
+    }
 </style>
 <div class="service-frame">
-    <img src="./image/service-bg.png" class="img-fluid" alt="">
+
+    <img src="./image/service-bg.webp" class="img-fluid banner-img" alt="" id="serbanner">
     <div class="container text-center my-5">
         <div class="d-flex align-items-center justify-content-center">
             <div class="line"></div>
@@ -79,11 +126,14 @@ include_once "./header.php";
             <div class="col-md-10 mx-auto">
                 <div class="row">
                     <!-- 1st service -->
-                    <div class="col-md-6">
-                        <img src="./image/ser-1.png" class="img-fluid w-100" alt="">
+                    <div class="col-md-6 desk-img">
+                        <img src="./image/ser-1.webp" class="img-fluid w-100 " alt="">
+                    </div>
+                    <div class="col-md-6 mob-img">
+                        <img src="./image/ser-1.webp" class="img-fluid w-100 " alt="">
                     </div>
 
-                    <div class="col-md-6 mt-3" id="SALON SERVICES">
+                    <div class="col-md-6 mt-3 service-card" id="SALON SERVICES">
                         <p class="service_heading">
                             SALON SERVICES
                         </p>
@@ -113,16 +163,15 @@ include_once "./header.php";
                         </p>
                         <div class="service_line" style="margin-bottom:40px"></div>
 
-<<<<<<< HEAD
-                        <a href="./service-detail.php" class="service_link">
-=======
                         <a href="./salon-detail.php" class="service_link">
->>>>>>> eec324ee7ab5b396ec8819b5bd3797cc1056488a
                             VIEW ALL
                         </a>
                     </div>
                     <!-- 2nd service -->
-                    <div class="col-md-6  mt-5" id="SPA SERVICES">
+                    <div class="col-md-6 mt-5 mob-img">
+                        <img src="./image/ser-2.webp" class="img-fluid w-100 mob-img" alt="">
+                    </div>
+                    <div class="col-md-6  mt-5 service-card" id="SPA SERVICES">
                         <p class="service_heading">
                             SPA SERVICES
                         </p>
@@ -156,15 +205,18 @@ include_once "./header.php";
                             VIEW ALL
                         </a>
                     </div>
-                    <div class="col-md-6 right-img">
-                        <img src="./image/ser-2.png" class="img-fluid w-100" alt="">
+                    <div class="col-md-6 right-img desk-img">
+                        <img src="./image/ser-2.webp" class="img-fluid w-100 desk-img" alt="">
                     </div>
                     <!-- 3rd service -->
-                    <div class="col-md-6">
-                        <img src="./image/ser-3.png" class="img-fluid w-100" alt="">
+                    <div class="col-md-6 desk-img">
+                        <img src="./image/ser-3.webp" class="img-fluid w-100 desk-img" alt="">
+                    </div>
+                    <div class="col-md-6 mt-5 mob-img">
+                        <img src="./image/ser-3.webp" class="img-fluid w-100 mob-img" alt="">
                     </div>
 
-                    <div class="col-md-6 mt-5" id="SLIMMING SERVICES">
+                    <div class="col-md-6 mt-5 service-card" id="SLIMMING SERVICES">
                         <p class="service_heading">
                             SLIMMING SERVICES
                         </p>
@@ -199,7 +251,10 @@ include_once "./header.php";
                         </a>
                     </div>
                     <!-- 4th service -->
-                    <div class="col-md-6  mt-5" id="AESTHETIC SERVICES">
+                    <div class="col-md-6 mt-5 mob-img">
+                        <img src="./image/ser-4.webp" class="img-fluid w-100 mob-img" alt="">
+                    </div>
+                    <div class="col-md-6  mt-5 service-card" id="AESTHETIC SERVICES">
                         <p class="service_heading">
                             AESTHETIC SERVICES
                         </p>
@@ -233,15 +288,18 @@ include_once "./header.php";
                             VIEW ALL
                         </a>
                     </div>
-                    <div class="col-md-6 right-img">
-                        <img src="./image/ser-4.png" class="img-fluid w-100" alt="">
+                    <div class="col-md-6 right-img desk-img">
+                        <img src="./image/ser-4.webp" class="img-fluid w-100 desk-img" alt="">
                     </div>
                     <!-- 5rd service -->
-                    <div class="col-md-6">
-                        <img src="./image/ser-5.png" class="img-fluid w-100" alt="">
+                    <div class="col-md-6 desk-img">
+                        <img src="./image/ser-5.webp" class="img-fluid w-100 desk-img" alt="">
+                    </div>
+                    <div class="col-md-6 mt-5 mob-img">
+                        <img src="./image/ser-5.webp" class="img-fluid w-100 mob-img" alt="">
                     </div>
 
-                    <div class="col-md-6 mt-5" id="LASER">
+                    <div class="col-md-6 mt-5 service-card" id="LASER">
                         <p class="service_heading">
                             LASER
 
@@ -278,7 +336,7 @@ include_once "./header.php";
             </div>
         </div>
     </div>
-    <img src="./image/ser-6.png" class="img-fluid mt-5" alt="">
+    <img src="./image/ser-6.webp" class="img-fluid mt-5" alt="" id="footservimg">
 </div>
 
 <?php

@@ -4609,7 +4609,7 @@ button {
       rgba(40, 40, 40, 0.67) 62%,
       rgba(255, 255, 255, 0.05) 100%
     ),
-    url("../images/gallery/shade.png") no-repeat center center;
+    url("../images/gallery/shade.webp") no-repeat center center;
   background-size: cover;
 
   align-items: center;
