@@ -72,7 +72,7 @@ include_once "./header.php";
 <!-- === -->
 <div class="cardbig">
   <div class="heading">
-    <h2>HAIR </h2>
+    <h2>MEN GROOMING - HAIR </h2>
   </div>
 
   <div class="container" id="cardcontainer">
@@ -120,7 +120,7 @@ include_once "./header.php";
 <!-- === -->
 <div class="cardbig">
   <div class="heading">
-    <h2>SKIN (Facials)</h2>
+    <h2>MEN GROOMING - SKIN (Facials)</h2>
   </div>
 
   <div class="container" id="cardcontainer">
@@ -211,7 +211,7 @@ include_once "./header.php";
 <!-- === -->
 <div class="cardbig">
   <div class="heading">
-    <h2>HAIR</h2>
+    <h2>WOMEN GROOMING - HAIR</h2>
   </div>
 
   <div class="container" id="cardcontainer">
@@ -271,7 +271,7 @@ include_once "./header.php";
 <!-- === -->
 <div class="cardbig">
   <div class="heading">
-    <h2>SKIN (Facial)</h2>
+    <h2>WOMEN GROOMING - SKIN (Facial)</h2>
   </div>
 
   <div class="container" id="cardcontainer">

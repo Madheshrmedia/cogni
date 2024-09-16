@@ -127,7 +127,7 @@
                     <p class="footer-content"><i class="fas fa-phone-alt me-3"></i>+91 8056121346/9003132242</p>
                     <p class="footer-content">
                         <i class="fas fa-envelope me-3"></i>
-                        cogniwellnesshub@gmail.com
+                        cogniwellnesshub@gmail.com / <br> support@cogniwellness.com
                     </p>
                     <p class="footer-content">
                         <i class="fas fa-clock me-3"></i>10:00 - 21:00

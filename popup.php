@@ -103,22 +103,27 @@
                             <div class="col-md-6">
                                 <input class="form-control pop-input" type="text" placeholder="Enter Your Name"
                                     id="name">
+                                <div class="invalid-feedback">Please enter your name.</div>
                             </div>
                             <div class="col-md-6">
                                 <input class="form-control pop-input" type="text" placeholder="Phone number" id="phone">
+                                <div class="invalid-feedback">Please enter your phone number.</div>
                             </div>
                             <div class="col-md-6">
                                 <input class="form-control pop-input" type="text" onfocus="(this.type='date')"
                                     placeholder="Date" id="date">
+                                <div class="invalid-feedback">Please select a date.</div>
                             </div>
                             <div class="col-md-6">
                                 <input class="form-control pop-input" type="text" placeholder="Service" id="service">
+                                <div class="invalid-feedback">Please specify the service.</div>
                             </div>
                             <div class="col-md-12 text-center" style="margin-top: 35px;">
                                 <a href="#" class="pop-link" onclick="sendWhatsApp()">Book now</a>
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -127,10 +132,58 @@
 
 <script>
     function sendWhatsApp() {
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const date = document.getElementById('date').value;
-        const service = document.getElementById('service').value;
+        const nameField = document.getElementById('name');
+        const phoneField = document.getElementById('phone');
+        const dateField = document.getElementById('date');
+        const serviceField = document.getElementById('service');
+
+        const name = nameField.value.trim();
+        const phone = phoneField.value.trim();
+        const date = dateField.value.trim();
+        const service = serviceField.value.trim();
+
+        let isValid = true;
+
+        // Regex for validating Indian phone number
+        const phoneRegex = /^[6-9]\d{9}$/;
+
+        // Validate Name
+        if (!name) {
+            nameField.classList.add('is-invalid');
+            isValid = false;
+        } else {
+            nameField.classList.remove('is-invalid');
+        }
+
+        // Validate Phone
+        if (!phone || !phoneRegex.test(phone)) {
+            phoneField.classList.add('is-invalid');
+            phoneField.nextElementSibling.textContent = 'Please enter a valid 10-digit Indian phone number.';
+            isValid = false;
+        } else {
+            phoneField.classList.remove('is-invalid');
+        }
+
+        // Validate Date
+        if (!date) {
+            dateField.classList.add('is-invalid');
+            isValid = false;
+        } else {
+            dateField.classList.remove('is-invalid');
+        }
+
+        // Validate Service
+        if (!service) {
+            serviceField.classList.add('is-invalid');
+            isValid = false;
+        } else {
+            serviceField.classList.remove('is-invalid');
+        }
+
+        // If form is invalid, do not proceed
+        if (!isValid) {
+            return;
+        }
 
         // Form the WhatsApp message
         const message = `Name: ${name}%0aPhone: ${phone}%0aDate: ${date}%0aService: ${service}`;

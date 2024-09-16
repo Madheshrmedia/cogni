@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Cogni Wellness Hub</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -404,7 +404,7 @@
         <div class="container" id="banner">
             <img src="./image/af-orser.webp" alt="Snow" style="width:100%;" id="frame">
             <div class="centered">
-                <h2>NEED TO ADD COGNI WELLNESS EXPERT TEAM GROUNP PHOTO</h2>
+                <!-- <h2>NEED TO ADD COGNI WELLNESS EXPERT TEAM GROUNP PHOTO</h2> -->
             </div>
         </div>
         <style>

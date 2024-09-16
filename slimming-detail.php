@@ -2,7 +2,7 @@
 <?php
 include_once "./header.php";
 ?>
-<div class="hero" style="background-image: url(./image/rect3.webp);padding-top: 23rem;">
+<div class="hero" style="background-image: url(./image/rect3.png);padding-top: 23rem;">
 </div>
 <!-- === -->
 <div class="container" style="margin:3rem auto">

@@ -317,6 +317,51 @@ $blogs = isset($blogs['listblog']) ? $blogs['listblog'] : [];
             margin-top: 6px;
         }
     }
+
+    /* For larger screens */
+    @media screen and (min-width: 768px) {
+        .our-service_card {
+            background: #E9F5EA;
+            margin-bottom: 30px;
+        }
+
+        .card-body {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .content {
+            flex: 0 0 70%;
+            padding: 40px;
+        }
+
+        .card-img {
+            flex: 0 0 30%;
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+            object-position: right;
+        }
+    }
+
+    @media screen and (max-width:990px) {
+        .our-service_col {
+            width: 100%;
+        }
+
+        .content {
+            flex: 0 0 73%;
+            padding: 40px;
+        }
+
+        .card-img {
+            flex: 0 0 27%;
+            width: 27%;
+            height: auto;
+            object-fit: cover;
+            object-position: right;
+        }
+    }
 </style>
 <!-- Swiper -->
 <div class="swiper mySwiper">
@@ -395,73 +440,73 @@ $blogs = isset($blogs['listblog']) ? $blogs['listblog'] : [];
                 </p>
 
                 <div class="row ">
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Salon</h3>
                                     <p class="card-text">Expert hair and beauty treatments tailored to you</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#SALON SERVICES" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-1.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Our Kids Spa</h3>
                                     <p class="card-text">Fun Filled Rejuvenating Kids Spa for Little Ones' Pampering</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#SPA SERVICES" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-2.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-6 mt-4 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Slimming Services</h3>
                                     <p class="card-text">Personalized programs to help you achieve your ideal body</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#SLIMMING SERVICES" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-3.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-6 mt-4 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Laser Treatments</h3>
                                     <p class="card-text">State-of-the-art laser treatments for various skin concerns</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#LASER" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-4.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-6 mt-4 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Aesthetic services</h3>
                                     <p class="card-text">Enhancing beauty through advanced aesthetic treatments</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#AESTHETIC SERVICES" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-5.webp" alt="Card image cap">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-6 mt-4 our-service_col">
                         <div class="card our-service_card">
                             <div class="card-body d-flex">
                                 <div class="content">
                                     <h3 class="card-title">Ayurvedic Family Spa</h3>
                                     <p class="card-text">Luxurious Ayurvedic Day Spa for Holistic Wellness</p>
-                                    <a href="./service.php" class="our-ser-button">Read More</a>
+                                    <a href="./service.php#SPA SERVICES" class="our-ser-button">Read More</a>
                                 </div>
                                 <img class="card-img" src="./image/ourser-6.webp" alt="Card image cap">
                             </div>
